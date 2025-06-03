@@ -46,7 +46,7 @@ A creative word guessing game where every incorrect guess "kills off" a programm
 
 - **Frontend**: ReactJS, Vite, HTML, CSS
 - **State Management**: React Hooks (`useState`)
-- **Confetti**: `react-confetti` (or similar)
+- **Confetti**: `react-confetti` 
 - **Deployment**: [Netlify](https://www.netlify.com/)
 
 ---
@@ -54,7 +54,7 @@ A creative word guessing game where every incorrect guess "kills off" a programm
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/your-username/assembly-endgame.git
+git clone https://github.com/dayo-frontdev/assembly-endgame.git
 cd assembly-endgame
 npm install
 npm run dev
