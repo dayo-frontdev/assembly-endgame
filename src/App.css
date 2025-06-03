@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  color: #D9D9D9;
+  padding: 20px;
+  height: 100vh;
+}
+
+.back-btn{
+height:30px;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.back-btn:hover{
+background: #10A95B;
+}
+
+.game-body{
+  height: 100%;
+  max-width: 594px;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+}
+
+.header{
+  width: 480px;
+height: 174px;
+gap: 20px;
+margin: 0 auto;
+text-align: center;
+color: #F9F4DA;
+margin-bottom: 170px;
+}
+
+.head-text{
+  font-family: Hanken Grotesk, sans-serif;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+.parag-text{
+  font-family: Hanken Grotesk, sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+color: #8E8E8E;
+}
+
+/* STATUS */
+
+.status{
+border-radius: 4px;
+border: 2px dashed #282726;
+padding-top: 6px;
+padding-bottom: 6px;
+margin-top: 30px;
+color: #F9F4DA;
+font-family: Hanken Grotesk, sans-serif;
+font-weight: 400;
+font-style: italic;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+}
+
+
+.gameOver{
+  background: #EC5D49;
+}
+
+.loosing{
+  background: #7A5EA7;
+}
+
+.gameWon{
+  background: #10A95B;
+}
+
+/* LANGUAGE */
+
+.language{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 350px;
+gap: 4.5px;
+margin-top: 10px;
+margin: 10px auto;
+}
+
+.lang{
+border-radius: 2px;
+font-family: Hanken Grotesk, sans-serif;
+font-weight: 700;
+font-size: 12px;
+border-radius: 3px;
+text-align: center;
+padding: 6px;
+position: relative;
+}
+
+.lost::before{
+  content: "💀";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.guess{
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  
+}
+.guess-letter{
+  width: 40px;
+  height: 40px;
+  font-family: Hanken Grotesk, sans-serif;
+  font-weight: 800;
+  padding: 10px;
+  text-align: center;
+  color: #EC5D49;
+  }
+
+  .hint{
+    margin-top: 8px;
+    font-weight: 900;
+    font-family: Hanken Grotesk, sans-serif;
+  }
+
+.letter-parent{
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  
+}
+
+.letter{
+border-bottom: 2px solid #F9F4DA ;
+width: 40px;
+height: 40px;
+background: #323232;
+font-family: Hanken Grotesk, sans-serif;
+font-weight: 700;
+padding: 10px;
+text-align: center;
+color: #F9F4DA;
+}
+
+.missed-letter{
+  color: #EC5D49;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* KEYBOARD */
+
+.keyboard{
+display: flex;
+flex-wrap: wrap;
+width: 480px;
+height: 136px;
+gap: 8px;
+justify-content: center;
+margin: 40px auto;
+}
+
+section.keyboard > button{
+width: 40px;
+height: 40px;
+border-radius: 4px;
+background: #FCBA29;
+border: 1px solid #D7D7D7;
+font-family: Hanken Grotesk, sans-serif;
+font-weight: 600;
+font-size: 16px;
+cursor: pointer;
+}
+
+
+
+section.keyboard > button.wrong{
+  background-color: #EC5D49;
+}
+
+section.keyboard > button.correct{
+  background-color: #10A95B;
+}
+
+.new-game{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.new-game button{
+  background: #11B5E5;
+  width: 228px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #D7D7D7;
+  font-family: Hanken Grotesk, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1E1E1E;
+}
